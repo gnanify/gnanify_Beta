@@ -1,20 +1,4 @@
-/* Ensure the page takes full height */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Make the main content area grow */
-#root {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Push footer to the bottom */
+/* 🌟 The Footer - Where Magic Happens */
 .footer {
     margin-top: auto;
     background: linear-gradient(to right, #141e30, #243b55);
@@ -23,8 +7,11 @@ html, body {
     text-align: center;
     position: relative;
     width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font! */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* 💥 Footer Sections */
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -32,29 +19,57 @@ html, body {
     align-items: flex-start;
     max-width: 1200px;
     margin: auto;
+    gap: 30px; /* Extra space for balance */
 }
 
-.footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 250px;
+/* 🌟 Address Section */
+.footer-section.address h3 {
+    color: #FFD700; /* Shine Bright! */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 0, 0.6);
 }
 
-.footer-section h3 {
-    font-size: 20px;
+.footer-section.address p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* 🌟 Quick Links */
+.footer-section.links h3 {
+    color: #ffd9006e;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 5px rgba(255, 255, 0, 0.4);
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links li {
     margin-bottom: 10px;
-    color: #FFD700;
 }
 
-.footer-section p,
-.footer-section a {
+.footer-section.links a {
     color: #bbb;
     font-size: 14px;
     text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.footer-section a:hover {
+.footer-section.links a:hover {
     color: #FFD700;
+    transform: scale(1.1); /* Pop effect on hover */
+}
+
+/* 🌟 Social Media Section */
+.footer-section.social h3 {
+    font-size: 1.8rem;
+    color: #FFD700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px rgba(255, 255, 0, 0.5);
 }
 
 .social-icons {
@@ -67,32 +82,52 @@ html, body {
 .social-icons a {
     color: white;
     font-size: 22px;
-    transition: transform 0.3s ease-in-out, color 0.3s;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .social-icons a:hover {
     color: #FFD700;
-    transform: scale(1.2);
+    transform: scale(1.2); /* Make it pop */
 }
 
+/* 🌟 Bottom Footer */
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
     border-top: 1px solid #444;
     padding-top: 10px;
+    color: #bbb;
 }
 
 .footer-bottom a {
     color: #FFD700;
 }
 
+.footer-bottom p {
+    font-style: italic;
+}
+
+/* 📱 Responsive Design - Smaller Devices */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
     }
 
+    .footer-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-section p, .footer-section a {
+        font-size: 12px;
+    }
+
     .social-icons {
         justify-content: center;
+        gap: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
     }
 }

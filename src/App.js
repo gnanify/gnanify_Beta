@@ -10,6 +10,7 @@ import Signin from "./components/Signin";
 
 // Pages
 import Profile from "./pages/Profile";
+import Resources from "./components/Resources";  // Import the Resources component
 
 import Courses from "./components/courses";
 import Contact from "./components/Contact";
@@ -26,7 +27,6 @@ function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [adminAuthenticated, setAdminAuthenticated] = useState(false);
 
-    // Check login status and admin status on page load
     useEffect(() => {
         const userToken = localStorage.getItem("userToken");
         if (userToken) {
@@ -39,13 +39,11 @@ function App() {
         }
     }, []);
 
-    // Update login state
     const handleLogin = () => {
         setIsLoggedIn(true);
         localStorage.setItem("userToken", "someUserToken"); // Example, replace with actual token logic
     };
 
-    // Update admin login state
     const handleAdminLogin = () => {
         setAdminAuthenticated(true);
         localStorage.setItem("adminAuthenticated", "true");
@@ -77,7 +75,8 @@ function App() {
                 } />
                 <Route path="/courses" element={<Courses />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/blogs" element={<Blogs />} /> 
+                <Route path="/blogs" element={<Blogs />} />
+                <Route path="/resources" element={<Resources />} /> {/* Added Resources Route */}
 
                 {/* Auth Routes */}
                 <Route path="/signup" element={<Signup />} />

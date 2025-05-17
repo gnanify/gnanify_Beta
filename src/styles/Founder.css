@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
 }
 
 .founder-card {
@@ -19,8 +20,9 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     padding: 30px;
     max-width: 800px;
-    width: 90%;
+    width: 100%;
     transition: transform 0.3s ease-in-out;
+    flex-wrap: wrap;
 }
 
 .founder-card:hover {
@@ -33,10 +35,13 @@
     border-radius: 50%;
     border: 5px solid #FFD700;
     margin-right: 25px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .founder-info {
     text-align: left;
+    flex: 1;
 }
 
 .founder-info h2 {
@@ -53,7 +58,7 @@
 
 .founder-info p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     color: #dcdcdc;
     margin-bottom: 15px;
 }
@@ -66,14 +71,15 @@
     color: white;
     font-size: 22px;
     margin: 0 10px;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .founder-social a:hover {
     color: #FFD700;
+    transform: scale(1.2);
 }
 
-/* Responsive */
+/* Responsive for tablets and below */
 @media (max-width: 768px) {
     .founder-card {
         flex-direction: column;
@@ -83,7 +89,28 @@
 
     .founder-img {
         margin-bottom: 20px;
+        margin-right: 0;
         width: 150px;
         height: 150px;
+    }
+
+    .founder-info {
+        text-align: center;
+    }
+}
+
+/* Additional tweak for mobile phones */
+@media (max-width: 480px) {
+    .founder-info h2 {
+        font-size: 24px;
+    }
+
+    .founder-info p {
+        font-size: 15px;
+    }
+
+    .founder-social a {
+        font-size: 20px;
+        margin: 0 8px;
     }
 }

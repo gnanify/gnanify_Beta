@@ -54,7 +54,7 @@ const Navbar = ({ onLogout, userData }) => {
                     <ul className={`nav-links ${isNavOpen ? "open" : ""}`}>
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/courses">Courses</Link></li>
-                        <li><Link to="/resources">Resources</Link></li>
+                        <li><Link to="/Resources">Resources</Link></li>
                         <li><Link to="/blogs">Blogs</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
 

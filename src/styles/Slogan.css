@@ -1,43 +1,52 @@
+/* 🌟 Main container for slogans */
 .slogan-container {
     text-align: center;
-    padding: 30px;
-    margin: 30px auto;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
     background: linear-gradient(135deg, #222, #121212);
     border-radius: 16px;
     box-shadow: 0 6px 15px rgba(255, 255, 0, 0.4);
-    max-width: 85%;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 90%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .slogan-container:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     box-shadow: 0 8px 18px rgba(255, 255, 0, 0.5);
 }
 
-/* 🎯 Slogan */
-.slogan {
-    font-size: 2.2rem;
+/* 🎯 Slogan Headings */
+.gnanify-slogan,
+.aiml-slogan {
+    font-size: 2rem;
     font-weight: bold;
-    color: yellow;
-    text-shadow: 3px 3px 6px rgba(255, 255, 0, 0.6);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(255, 255, 0, 0.5);
 }
 
-/* 📄 Description */
+.gnanify-slogan {
+    color: #ffeb3b;
+}
+
+.aiml-slogan {
+    color: #fff;
+}
+
+/* 📄 Description text */
 .slogan-description {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #ddd;
-    line-height: 1.7;
+    line-height: 1.6;
     max-width: 750px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 0 1rem;
 }
 
 .slogan-description a {
     color: yellow;
     font-weight: bold;
     text-decoration: none;
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    transition: color 0.3s, text-shadow 0.3s;
 }
 
 .slogan-description a:hover {
@@ -45,41 +54,42 @@
     text-shadow: 2px 2px 8px rgba(255, 255, 0, 0.8);
 }
 
-/* 🔍 Search Bar Styling */
+/* 🔍 Search Bar */
 .search-form {
     display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
     flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0 1.5rem;
+    gap: 0.5rem;
 }
 
 .search-input {
-    padding: 20px 20px;
-    width: 500px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 500px;
+    padding: 1rem;
     border: 2px solid yellow;
-    border-radius: 8px 0 0 8px;
-    font-size: 1rem;
-    outline: none;
+    border-radius: 8px;
     background-color: #111;
-    color: rgb(254, 254, 254);
-    box-shadow: inset 0 0 5px rgba(255, 255, 0, 0.4);
-    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: inset 0 0 5px rgba(255, 255, 0, 0.3);
+    outline: none;
 }
 
 .search-input::placeholder {
-    color: #999;
+    color: #aaa;
 }
 
 .search-button {
-    padding: 10px 20px;
+    padding: 0.8rem 1.5rem;
     background-color: rgb(197, 197, 102);
     color: #111;
     font-weight: bold;
-    font-size: 1rem;
     border: none;
-    border-radius: 0 8px 8px 0;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: background 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 10px rgba(255, 255, 0, 0.3);
 }
 
@@ -88,35 +98,32 @@
     box-shadow: 0 6px 14px rgba(255, 255, 0, 0.5);
 }
 
-/* 📱 Responsive Design */
+/* 📱 Responsive Breakpoints */
 @media (max-width: 768px) {
-    .slogan {
-        font-size: 1.8rem;
+    .gnanify-slogan,
+    .aiml-slogan {
+        font-size: 1.7rem;
     }
 
     .slogan-description {
-        font-size: 1.1rem;
-    }
-
-    .search-input {
-        width: 100%;
-        border-radius: 8px 8px 0 0;
-        margin-bottom: 8px;
-    }
-
-    .search-button {
-        width: 100%;
-        border-radius: 0 0 8px 8px;
+        font-size: 1.05rem;
     }
 
     .search-form {
         flex-direction: column;
         align-items: center;
     }
+
+    .search-input,
+    .search-button {
+        width: 100%;
+        border-radius: 8px;
+    }
 }
 
 @media (max-width: 480px) {
-    .slogan {
+    .gnanify-slogan,
+    .aiml-slogan {
         font-size: 1.5rem;
     }
 

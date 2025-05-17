@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +8,43 @@ body {
     overflow-x: hidden; /* Prevents horizontal scrolling */
 }
 
+/* App Container */
 .app {
     text-align: center;
     padding-bottom: 50px; /* Space for footer */
+}
+
+/* Responsive Design */
+
+/* For mobile devices (small screens) */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
+
+    .app {
+        padding: 20px; /* Add some space around the content */
+    }
+}
+
+/* For tablets and medium-sized screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 16px; /* Adjust font size for tablets */
+    }
+
+    .app {
+        padding: 30px; /* Add some space around the content */
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px; /* Default font size for desktops */
+    }
+
+    .app {
+        padding: 50px; /* More space for content on large screens */
+    }
 }
