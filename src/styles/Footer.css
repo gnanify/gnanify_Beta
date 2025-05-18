@@ -21,7 +21,6 @@
     text-align: left;
 }
 
-/* ✅ LOGO SECTION */
 .logo-section {
     flex: 1 1 150px;
     display: flex;
@@ -35,7 +34,7 @@
     object-fit: contain;
 }
 
-/* 📍 Address */
+/* Address Section */
 .footer-section.address h3 {
     color: #FFD700;
     font-size: 1.6rem;
@@ -49,7 +48,7 @@
     margin: 5px 0;
 }
 
-/* 🔗 Links */
+/* Quick Links Section */
 .footer-section.links h3 {
     color: #FFD700;
     font-size: 1.6rem;
@@ -69,14 +68,15 @@
     color: #bbb;
     text-decoration: none;
     font-size: 14px;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s;
 }
 
 .footer-section.links a:hover {
     color: #FFD700;
+    text-decoration: underline;
 }
 
-/* 🌍 Social */
+/* Social Media Section */
 .footer-section.social h3 {
     font-size: 1.6rem;
     color: #FFD700;
@@ -114,7 +114,7 @@
     color: #FFD700;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
@@ -128,5 +128,9 @@
 
     .logo-section {
         margin-bottom: 20px;
+    }
+
+    .footer {
+        padding: 30px 15px;
     }
 }
