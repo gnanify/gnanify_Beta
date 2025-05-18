@@ -13,17 +13,18 @@ const Founder = () => {
                     />
                     <div className="founder-info">
     <h2>Gnaneswar Kareti</h2>
-    <h4>Founder & Visionary Behind Gnanify</h4>
+    <h4>Founder & Tech Innovator at Gnanify</h4>
     <p>
-        I'm on a mission to **revolutionize tech learning**! As the founder of **Gnanify**, I created a platform that’s all about **breaking down the barriers** in AI, ML, Data Science, and beyond.
+        At **Gnanify**, we’re on a mission to **transform tech education**. It’s not about one person — it’s about **building something powerful together**! Our platform is designed to make AI, ML, Data Science, and more **accessible** to learners worldwide.
     </p>
     <p>
-        I’m not here to teach — I’m here to **build**. My goal? To create a **global hub** where learners and innovators can come together, collaborate, and **push the limits** of what’s possible. As the **GitHub Repo Owner**, I’m constantly working to evolve Gnanify into a space where tech dreams come true.
+        **Collaboration** is at the heart of Gnanify. Whether you're coding, contributing ideas, or helping others learn, every contribution counts. Together, we're creating a **global community** of innovators that empowers learners and creators alike to thrive.
     </p>
     <p>
-        Join me on this journey as we **disrupt** the traditional learning methods and redefine what it means to be a creator in the world of **AI, ML**, and **Data Science**! 🚀
+        This is **our journey** to disrupt how tech education is done — and we need YOU to be a part of it. Let’s **create the future** of learning, one contribution at a time! 🌍🚀
     </p>
 </div>
+
 
                         <div className="founder-social">
                             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
