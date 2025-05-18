@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="footer-section address">
                     <h3>📍 Let's Connect!</h3>
                     <p><strong>Gnanify EdTech Pvt Ltd</strong></p>
-                    <p>🌟 Madhapur, Tirupati, Andhra Pradesh - 517501, India</p>
+                   
                     <p>
                         <FaEnvelope />{" "}
                         <a href="mailto:support@gnanify.com" aria-label="Email support">support@gnanify.com</a>

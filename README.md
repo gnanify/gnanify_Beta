@@ -9,6 +9,7 @@
 
 ---
 
+
 ## 🧭 Table of Contents
 
 1. [🤯 What is Gnanify?](#what-is-gnanify)
