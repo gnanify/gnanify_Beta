@@ -5,7 +5,6 @@ import {
     FaInstagram,
     FaLinkedin,
     FaEnvelope,
-    FaPhone,
 } from "react-icons/fa";
 import { Link } from "react-router-dom"; // Optional: Use if you're using React Router
 import "../styles/Footer.css";
@@ -31,11 +30,7 @@ const Footer = () => {
                    
                     <p>
                         <FaEnvelope />{" "}
-                        <a href="mailto:support@gnanify.com" aria-label="Email support">support@gnanify.com</a>
-                    </p>
-                    <p>
-                        <FaPhone />{" "}
-                        <a href="tel:+919876543210" aria-label="Call support">+91 98765 43210</a>
+                        <a href="mailto:gnanify@gmail.com" aria-label="Email support">gnanify@gmail.com</a>
                     </p>
                 </div>
 
@@ -63,7 +58,7 @@ const Footer = () => {
                         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/company/105275502/admin/dashboard/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <FaLinkedin />
                         </a>
                     </div>
