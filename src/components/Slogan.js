@@ -141,12 +141,28 @@ const Slogan = () => {
   }, []);
 
   const handleSearch = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim() !== "") {
-      const query = encodeURIComponent(searchQuery);
-      window.open(`https://www.google.com/search?q=${query}`, "_blank");
-    }
-  };
+  e.preventDefault();
+
+  // Check if the search query is not empty
+  if (searchQuery.trim() !== "") {
+    // Here, you can use the searchQuery to perform any search action
+    // For example, if you want to log it or search within your own app
+    console.log("We are working on it:", searchQuery);
+    
+    // Custom search logic
+    // You can call a function or an API here to handle the search query
+    // Example: fetchData(searchQuery);
+
+    // Or display results inside your app:
+    // setSearchResults(fetchedData);
+    // For example, displaying results:
+    alert(`we are working on it:`);
+  } else {
+    // Handle the case when the search query is empty
+    alert("Please enter a search query.");
+  }
+};
+
 
   return (
     <div className="slogan-container">
