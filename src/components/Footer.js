@@ -10,7 +10,6 @@ import {
 import { Link } from "react-router-dom"; // Optional: Use if you're using React Router
 import "../styles/Footer.css";
 import webicon from "../assets/images/webiconmain.png";
-
 const Footer = () => {
     return (
         <footer className="footer" role="contentinfo">
