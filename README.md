@@ -73,7 +73,7 @@ _Coming soon. Until then, use your imagination. Or check out the [live site](htt
 Clone this beast:
 
 ```bash
-git clone https:/m/gnanify/gnanify_Beta
+https://github.com/gnanify/gnanify_Beta
 cd gnanify
 npm install
 npm start
