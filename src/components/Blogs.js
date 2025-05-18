@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Blogs.css"; // Import the Blogs.css file
-
 const Blogs = () => {
   const [loading, setLoading] = useState(true);
 
