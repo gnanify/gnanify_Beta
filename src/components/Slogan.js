@@ -155,7 +155,6 @@ const Slogan = () => {
 
     // Or display results inside your app:
     // setSearchResults(fetchedData);
-
     // For example, displaying results:
     alert(`we are working on it:`);
   } else {
