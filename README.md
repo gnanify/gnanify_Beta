@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# 🌐 Gnanify — Where Curiosity Meets Code 🧠✨
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Live Website](https://img.shields.io/badge/live-gnanify.com-brightgreen?style=flat-square&logo=Google-Chrome)](https://www.gnanify.com)
+[![Build Status](https://img.shields.io/badge/build-passing-success?style=flat-square&logo=vercel)]()
+[![React Powered](https://img.shields.io/badge/powered%20by-React-61DAFB.svg?style=flat-square&logo=react)](https://reactjs.org)
+[![MIT License](https://img.shields.io/github/license/your-username/gnanify?style=flat-square)](LICENSE)
 
-## Available Scripts
+> 🚀 **Gnanify** isn’t just a web app. It’s a digital dojo of knowledge, a sanctuary for the curious, and a caffeine shot for your brain.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🧭 Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. [🤯 What is Gnanify?](#what-is-gnanify)
+2. [🚀 Features](#-features)
+3. [🖼 Screenshots](#-screenshots)
+4. [🧰 Tech Stack](#-tech-stack)
+5. [🔧 Setup & Development](#-setup--development)
+6. [🔐 Environment Variables](#-environment-variables)
+7. [📦 Deployment](#-deployment)
+8. [📁 Project Structure](#-project-structure)
+9. [🔮 Roadmap](#-roadmap)
+10. [📈 Analytics & SEO](#-analytics--seo)
+11. [💌 Contributing](#-contributing)
+12. [⚖️ License](#-license)
+13. [❓FAQs](#-faqs)
+14. [🧙‍♂️ Support](#-support)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🤯 What is Gnanify?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Gnanify** is not your average educational site. It’s **a portal to perpetual learning**, a place where knowledge is **fun, accessible**, and maybe just a little dangerously addictive.
 
-### `npm run build`
+Gnanify = "Gnan" (Knowledge) + "ify" (To make it awesome).  
+That’s right. We turned *wisdom* into a **product**. You’re welcome, Internet. 🧘‍♀️📚
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| ⚙ Feature                  | 💬 Description                                                              |
+|---------------------------|------------------------------------------------------------------------------|
+| 🔍 Topic Discovery         | Browse curated content across multiple knowledge domains                    |
+| 📱 Fully Responsive        | Works on your giant 4K monitor and your cracked Android phone equally well  |
+| ⚡ Blazing Fast            | Built with React and optimized like a formula one car on steroids 🏎️         |
+| 🌍 SEO & Metadata          | Because if Google can’t find it, did it even happen?                        |
+| 🔮 Scalable Architecture   | Ready to grow as you grow                                                   |
+| 🔐 Coming Soon Features    | Auth, content uploads, dark mode (yes, it’s a must), and more               |
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🖼 Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_Coming soon. Until then, use your imagination. Or check out the [live site](https://www.gnanify.com)._  
+> 🤖 “We will post them when the pixels align.”
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧰 Tech Stack
 
-## Learn More
+- 💻 **Frontend**: React + JSX
+- 🎨 **Styles**: CSS3 (with love and media queries)
+- 🔧 **Bundler**: Webpack via Create React App
+- 🌐 **SEO Tools**: React Helmet
+- 📊 **Analytics (Optional)**: Google Analytics or Plausible
+- 🚀 **Deployment**: Vercel / Netlify / GitHub Pages / Magic
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔧 Setup & Development
 
-### Code Splitting
+Clone this beast:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/your-username/gnanify.git
+cd gnanify
+npm install
