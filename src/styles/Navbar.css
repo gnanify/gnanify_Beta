@@ -1,21 +1,24 @@
+/* Navbar container */
 .navbar {
-    background-color: #222; /* Dark theme */
-    padding: 15px;
-    text-align: center;
+    background-color: #222;
+    padding: 15px 20px;
     font-size: 1.5rem;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    z-index: 100;
 }
 
+/* Navigation links */
 .nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .nav-links li {
@@ -24,16 +27,16 @@
 
 .nav-links a {
     text-decoration: none;
-    color: #ffcc00; /* Yellow contrast for visibility */
+    color: #ffcc00;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-    color: #00ccff; /* Cyan for hover effect */
+    color: #00ccff;
 }
 
-/* Hamburger menu icon */
+/* Hamburger menu */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -42,41 +45,13 @@
 }
 
 .hamburger .line {
-    width: 30px;
-    height: 4px;
+    width: 28px;
+    height: 3px;
     background-color: #ffcc00;
+    transition: all 0.3s ease;
 }
 
-/* Responsive Navbar */
-@media (max-width: 768px) {
-    .navbar {
-        font-size: 1.2rem;
-        padding: 10px;
-        flex-direction: column;
-    }
-
-    /* Hide the nav-links by default in mobile view */
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-        display: none;
-        width: 100%;
-        text-align: left;
-    }
-
-    /* When the menu is open, show the links */
-    .nav-links.open {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex; /* Show hamburger on small screens */
-    }
-}
-
-
-
-
+/* Profile icon */
 .profile-icon {
     display: flex;
     align-items: center;
@@ -85,7 +60,7 @@
     cursor: pointer;
 }
 
-/* Centered overlay */
+/* Profile overlay */
 .profile-card-overlay {
     position: fixed;
     top: 0;
@@ -99,14 +74,14 @@
     z-index: 200;
 }
 
-/* Centered profile card */
+/* Profile card */
 .profile-card {
     background-color: #fff;
     color: #333;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    min-width: 250px;
+    min-width: 260px;
     text-align: center;
 }
 
@@ -127,8 +102,41 @@
     padding: 10px 16px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .logout-btn:hover {
     background-color: #e60000;
+}
+
+/* ========== Responsive Navigation ========== */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+        width: 100%;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .profile-icon {
+        align-self: flex-end;
+        margin-top: 10px;
+    }
 }

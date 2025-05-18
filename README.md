@@ -76,3 +76,5 @@ Clone this beast:
 git clone https://github.com/your-username/gnanify.git
 cd gnanify
 npm install
+npm start
+

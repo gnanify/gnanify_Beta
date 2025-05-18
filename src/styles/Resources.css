@@ -1,0 +1,29 @@
+.coming-soon-container {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1a1a2e;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(255, 255, 0, 0.2);
+  margin: 50px auto;
+  max-width: 700px;
+}
+
+.coming-soon-container h1 {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+.coming-soon-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 100px 20px;
+  color: #FFD700;
+}

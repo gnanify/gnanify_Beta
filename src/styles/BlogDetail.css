@@ -1,3 +1,4 @@
+/* Blog Detail */
 .blog-detail {
     max-width: 800px;
     margin: 2rem auto;
@@ -7,10 +8,12 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Blog Actions */
 .blog-actions {
     display: flex;
     gap: 1rem;
     margin: 1.5rem 0;
+    justify-content: center; /* Centering the action buttons */
 }
 
 .blog-actions button {
@@ -20,8 +23,14 @@
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
+.blog-actions button:hover {
+    background: #1565c0; /* Slightly darker blue on hover */
+}
+
+/* Comments Section */
 .comments-section {
     margin-top: 2rem;
 }
@@ -32,6 +41,7 @@
     border-radius: 6px;
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
+    resize: vertical; /* Allow vertical resize */
 }
 
 .comments-section button {
@@ -41,8 +51,14 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
+.comments-section button:hover {
+    background: #1b5e20; /* Darker green on hover */
+}
+
+/* Comment List */
 .comment-list {
     list-style-type: none;
     padding-left: 0;
@@ -53,4 +69,44 @@
     margin-top: 0.5rem;
     padding: 0.5rem;
     border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-detail {
+        padding: 1rem;
+        margin: 1rem;
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .blog-actions {
+        flex-direction: column; /* Stack the action buttons on smaller screens */
+        gap: 0.8rem;
+    }
+
+    .comments-section textarea {
+        padding: 0.5rem;
+    }
+
+    .comments-section button {
+        width: 100%; /* Make the button full width on small screens */
+    }
+
+    .comment-list li {
+        font-size: 0.9rem; /* Slightly smaller text on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-actions button {
+        padding: 0.5rem 0.8rem; /* Adjust button padding for very small screens */
+    }
+
+    .comments-section textarea {
+        padding: 0.5rem;
+    }
+
+    .comment-list li {
+        font-size: 0.8rem; /* Even smaller text on very small screens */
+    }
 }

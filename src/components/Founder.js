@@ -7,7 +7,7 @@ const Founder = () => {
             <div className="founder-container">
                 <div className="founder-card">
                     <img
-                        src="https://yt3.ggpht.com/7WjKqybk6PZNUAKrLsr1S0_2Rgql8dEKYwTIPN52kp8l9dvN-Wd0POsEaJTkBKVlZE2KzBYRXA=s600-c-k-c0x00ffffff-no-rj-rp-mo"
+                        src="https://media.licdn.com/dms/image/v2/D5603AQEmZc3ZNQbwAg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1726319583959?e=1752710400&v=beta&t=5OQJ10rClK4VTCAWXNiEqQXop-lC-XdvgdAPRWvLQU0"
                         alt="Founder"
                         className="founder-img"
                     />
