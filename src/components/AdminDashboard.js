@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
-
   const handleLogout = () => {
     navigate('/admin'); // Redirect back to login
   };
